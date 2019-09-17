@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="doppler" translate="label" sortOrder="999999" class="doppler-tab">
+            <label>Doppler</label>
+        </tab>
+        <section id="doppler_relay_config" translate="label" type="text" sortOrder="-5000" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Relay Configuration</label>
+            <tab>doppler</tab>
+            <resource>Combinatoria_DopplerRelay::configuration</resource>
+            <group id="config" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"  showInStore="1">
+                <label>Doppler Relay</label>
+                <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="host" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Host</label>
+                </field>
+                <field id="port" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Port</label>
+                </field>
+                <field id="username" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Username</label>
+                    <comment>This is your Doppler Relay email address.</comment>
+                    <validate>validate-email</validate>
+                </field>
+                <field id="password" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Password</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,27 @@
+{
+  "name": "combinatoria/module-doppler-relay",
+  "description": "Doppler Relay extension for Magento 2",
+  "require": {
+    "php": "~5.5.0"
+  },
+  "authors": [
+    {
+      "name": "Combinatoria",
+      "email": "contacto@combinatoria.com.ar"
+    }
+  ],
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Combinatoria\\DopplerRelay\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}
