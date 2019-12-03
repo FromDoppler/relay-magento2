@@ -5,7 +5,7 @@
             <label>Doppler</label>
         </tab>
         <section id="doppler_relay_config" translate="label" type="text" sortOrder="-5000" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Relay Configuration</label>
+            <label>Transactional Email</label>
             <tab>doppler</tab>
             <resource>Combinatoria_DopplerRelay::configuration</resource>
             <group id="config" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"  showInStore="1">
