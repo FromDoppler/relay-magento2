@@ -1,8 +1,8 @@
 {
-  "name": "combinatoria/module-doppler-relay",
+  "name": "doppleremail/relay",
   "description": "Doppler Relay extension for Magento 2",
   "require": {
-    "php": "~5.5.0"
+    "php": "~7.1.3|~7.2.0"
   },
   "authors": [
     {
