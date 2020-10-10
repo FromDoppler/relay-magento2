@@ -9,9 +9,14 @@
             <tab>doppler</tab>
             <resource>Combinatoria_DopplerRelay::configuration</resource>
             <group id="config" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"  showInStore="1">
-                <label>Doppler Relay</label>
+                <label>Connect your Magento store with Doppler Relay</label>
+                <field id="author" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label><![CDATA[Send all the Emails from your Magento store through Doppler Relay. Any doubts? Just press <a href='https://help.fromdoppler.com/en/how-to-integrate-your-magento-account-with-doppler/' target='_blank'>HELP</a>.]]></label>
+                    <frontend_model>Combinatoria\DopplerRelay\Block\Adminhtml\Paragraph</frontend_model>
+                </field>
                 <field id="enabled" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Enabled</label>
+                    <comment><![CDATA[By enabling this connection, you agree to Doppler's <a href='https://www.fromdoppler.com/en/legal/terms/?utm_source=integracion&utm_medium=integracion&utm_campaign=magento'>Terms and Conditions</a>.]]></comment>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
                 <field id="host" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
@@ -22,11 +27,12 @@
                 </field>
                 <field id="username" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Username</label>
-                    <comment>This is your Doppler Relay email address.</comment>
+                    <comment>This is your Doppler Relay User Email.</comment>
                     <validate>validate-email</validate>
                 </field>
                 <field id="password" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Password</label>
+                    <comment><![CDATA[Where are your SMTP credentials? Just press <a href='https://help.dopplerrelay.com/en/where-can-i-find-my-api-key-and-smtp-credentials' target='_blank'>HELP</a>.]]></comment>
                 </field>
             </group>
         </section>
