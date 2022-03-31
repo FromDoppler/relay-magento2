@@ -50,6 +50,9 @@ class Transport
         $message = $subject->getMessage();
         if ($this->helper->isEnabled() && $message) {
             $transport = $this->helper->getTransport($this->_storeId);
+            if ($this->helper->versionCompare('2.2.8')) {
+                $message = Message::fromString($message->getRawMessage())->setEncoding('utf-8');
+            }
             try {
                 $transport->send($message);
             } catch (Exception $e) {
