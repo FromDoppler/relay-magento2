@@ -8,7 +8,7 @@
             <label>Transactional Email</label>
             <tab>doppler</tab>
             <resource>Combinatoria_DopplerRelay::configuration</resource>
-            <group id="config" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"  showInStore="1">
+            <group id="config_smtp_relay" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"  showInStore="1">
                 <label>Connect your Magento store with Doppler Relay</label>
                 <field id="author" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label><![CDATA[Send all the Emails from your Magento store through Doppler Relay. Any doubts? Just press <a href='https://help.fromdoppler.com/en/how-to-integrate-your-magento-account-with-doppler/' target='_blank'>HELP</a>.]]></label>

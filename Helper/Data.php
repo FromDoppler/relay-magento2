@@ -48,11 +48,11 @@ class Data extends AbstractHelper{
 
     protected $_transport;
 
-    const CONFIG_DOPPLER_RELAY_ENABLED   = 'doppler_relay_config/config/enabled';
-    const CONFIG_DOPPLER_RELAY_USERNAME = 'doppler_relay_config/config/username';
-    const CONFIG_DOPPLER_RELAY_PASSWORD = 'doppler_relay_config/config/password';
-    const CONFIG_DOPPLER_RELAY_HOST     = 'doppler_relay_config/config/host';
-    const CONFIG_DOPPLER_RELAY_PORT     = 'doppler_relay_config/config/port';
+    const CONFIG_DOPPLER_RELAY_ENABLED   = 'doppler_relay_config/config_smtp_relay/enabled';
+    const CONFIG_DOPPLER_RELAY_USERNAME = 'doppler_relay_config/config_smtp_relay/username';
+    const CONFIG_DOPPLER_RELAY_PASSWORD = 'doppler_relay_config/config_smtp_relay/password';
+    const CONFIG_DOPPLER_RELAY_HOST     = 'doppler_relay_config/config_smtp_relay/host';
+    const CONFIG_DOPPLER_RELAY_PORT     = 'doppler_relay_config/config_smtp_relay/port';
     const CONFIG_DOPPLER_RELAY_AUTH     = 'Login';
     /**
      * @param Context $context
